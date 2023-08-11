@@ -1,0 +1,27 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 3%;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(0, 128, 5, 1);
+    color: #fff;
+    font-size: 10px;
+}
+
+.mujib {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}

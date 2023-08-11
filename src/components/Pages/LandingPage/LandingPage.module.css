@@ -85,7 +85,7 @@
 
 .info {
     width: 80%;
-    padding: 30px;
+    padding: 25px 30px;
     border-radius: 10px;
     background-color: rgba(132, 251, 0, 0.55);
 }
@@ -116,11 +116,11 @@
 
 .image {
     position: absolute;
-    top: -150px;
+    top: -140px;
     z-index: 9999;
     right: 0;
-    width: 300px;
-    height: 392px;
+    width: 350px;
+    height: 384px;
 }
 
 
@@ -145,8 +145,9 @@
     padding: 20px;
     margin-right: 30px;
     margin-bottom: 30px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transition: all 0.5s;
 }
 
 .circle3 {
@@ -227,7 +228,7 @@ footer {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 200, 24, 1);
-    padding: 50px 5%;
+    padding: 80px 5%;
     position: relative;
     overflow: hidden;
 }
@@ -242,7 +243,7 @@ footer {
     line-height: 50px;
     color: #fff;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .link {

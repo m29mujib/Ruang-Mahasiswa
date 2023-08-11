@@ -11,6 +11,7 @@ import I from '../../../assets/instagram.png'
 import L from '../../../assets/linkedin.png'
 import Y from '../../../assets/youtube.png'
 import P from '../../../assets/playstore.png'
+import { Link } from 'react-router-dom'
 const LandingPage = () => {
    return(
       <>
@@ -45,7 +46,7 @@ const LandingPage = () => {
                         <option value="S1">S1</option>
                         <option value="S2">S2</option>
                      </select>
-                     <button className={styles.btn}>Login</button>
+                     <Link to="/beranda" className={styles.btn}>Login</Link>
                   </form>
                </div>
             </div>
@@ -53,9 +54,9 @@ const LandingPage = () => {
                <img src={Group} className='w-3/5'/>
             </div>
          </div> 
-          <div className={`m-auto mt-8 ${styles.info}`}>
-            <h1 className='text-2xl mb-5 font-bold text-green-700'>Pengumuman Nilai Murni UAS dan KHS Semester Ganjil 2022/2023 </h1>
-            <p className='text-sm font-semibold text-slate-900'>Nilai Murni UAS dan Kartu Hasil Studi (KHS) dapat dilihat pada tanggal 18 Januari 2023, pukul 17.00 WIB</p>
+          <div className={`m-auto mt-3 ${styles.info}`}>
+            <h1 className='text-xl mb-3 font-bold text-green-700'>Pengumuman Nilai Murni UAS dan KHS Semester Ganjil 2022/2023 </h1>
+            <p className='text-xs font-semibold text-slate-900'>Nilai Murni UAS dan Kartu Hasil Studi (KHS) dapat dilihat pada tanggal 18 Januari 2023, pukul 17.00 WIB</p>
          </div>
          <div className={styles.circle1}></div>
          <div className={styles.circle2}></div>
@@ -67,7 +68,7 @@ const LandingPage = () => {
           <img src={WrapTwo} className={styles.image}/>
         </div>
         <div className={`pt-3 pb-3 pl-14 pr-14 ${styles.wrapTwoRight}`}>
-            <h1 className='text-2xl text-slate-200 font-bold mb-6 w-3/4'>Kamu juga bisa mengecek NIM baru kamu ataupun mengecek surat keluar / surat DO</h1>
+            <h1 className='text-2xl text-slate-100 font-bold mb-6 w-3/4'>Kamu juga bisa mengecek NIM baru kamu ataupun mengecek surat keluar / surat DO</h1>
             <form className='flex w-full'>
                <input type="text" placeholder='masukan nim anda..' className={`w-full mr-6 ${styles.input}`}/>
                 <select id="cars" name="carlist" form="carform" className={`w-80 ${styles.input}`}>
@@ -126,7 +127,7 @@ const LandingPage = () => {
       <div className={styles.wrapFour}>
          <div className={styles.bayangan}></div>
          <div className={styles.iklan}>
-            <h1 className='text-5xl w-2/3 text-slate-100 font-bold text-center mb-9'>Ikuti Kami terus untuk update seputar info akademik </h1>
+            <h1 className='text-4xl w-2/3 text-slate-100 font-bold text-center mb-9'>Ikuti Kami terus untuk update seputar info akademik </h1>
             <h2 className='text-2xl text-slate-100 font-semibold text-center'>Kuliah? BSI Aja!!!</h2>
          </div>
       </div>
@@ -159,10 +160,10 @@ const LandingPage = () => {
          </div>
          <div className={styles.bottom}>
             <div className={styles.link}>
-               <a href="#" className={styles.p}><img src={I} className='w-6'/></a>
-               <a href="#" className={styles.p}><img src={Y} className='w-6'/></a>
-               <a href="#" className={styles.p}><img src={L} className='w-6'/></a>
-               <a href="#" className={styles.p}><img src={P} className='w-6'/></a>
+               <a href="https://www.instagram.com/muhamadamujib/" target='_blank' className={styles.p}><img src={I} className='w-6'/>instagram</a>
+               <a href="#" className={styles.p}><img src={Y} className='w-6'/>youtube</a>
+               <a href="https://www.linkedin.com/in/muhamadamujib" target='_blank' className={styles.p}><img src={L} className='w-6'/>linkedin</a>
+               <a href="#" className={styles.p}><img src={P} className='w-6'/>playstore</a>
             </div>
             <div className=''>
                <p className='text-sm text-white w-1/3 mt-3'>@2023 SISFO AKADEMIK MAHASISWA - Universitas Bina Sarana Informatika ALL RIGHT RESERVED</p>

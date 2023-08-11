@@ -1,0 +1,49 @@
+.sidebar {
+    height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.linkTo {
+    display: flex;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 30px;
+    color: rgba(0, 128, 15, 1);
+    font-weight: 600;
+}
+
+.img {
+    width: 24px;
+    margin-right: 20px;
+}
+
+.btnLogout {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border: none;
+    background-color: rgba(0, 160, 19, 1);
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: #fff;
+    font-weight: 600;
+}
