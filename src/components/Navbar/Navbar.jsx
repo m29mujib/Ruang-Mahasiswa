@@ -2,7 +2,7 @@ import styles from "./Navbar.module.css"
 import Lonceng from '../../assets/ringing.png'
 import Mujib from '../../assets/ganteng.jpeg'
 const Navbar = () => {
-   // const nim = localStorage.getItem("Nim")
+   const nim = localStorage.getItem("Nim")
    return(
       <div className={`w-full ${styles.navbar}`}>
         <div className={styles.left}>
@@ -15,7 +15,7 @@ const Navbar = () => {
                <p><img src={Mujib} className={styles.mujib}/></p>
             </div>
             <div>
-               <p className="text-center text-xs font-semibold">12201135</p>
+               <p className="text-center text-xs font-semibold">{nim}</p>
                <button className={styles.btn}>Online</button>
             </div>
         </div> 
