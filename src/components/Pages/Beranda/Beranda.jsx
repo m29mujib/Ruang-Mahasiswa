@@ -22,7 +22,7 @@ const Beranda = () => {
                   <img src={Meja} className={styles.icon}/>
                </div>
                <div className={styles.cardRight}>
-                  <h1 className='text-sm font-semibold '>Kegiatan Akademik</h1>
+                  <h1 className='text-sm font-semibold'>Kegiatan Akademik</h1>
                   <p className={styles.deskripsi}>Info seputar nilai, jadwal kuliah, ujian dll</p>
                </div>
             </div>
@@ -31,7 +31,7 @@ const Beranda = () => {
                   <img src={Tas} className={styles.icon}/>
                </div>
                <div className={styles.cardRight}>
-                  <h1 className='text-sm font-semibold '>Mahasiswa</h1>
+                  <h1 className='text-sm font-semibold'>Mahasiswa</h1>
                   <p className={styles.deskripsi}>Info seputar data akademik mahasiswa, KRS serta IPK</p>
                </div>
             </div>
@@ -49,7 +49,7 @@ const Beranda = () => {
                   <img src={Orang} className={styles.icon}/>
                </div>
                <div className={styles.cardRight}>
-                  <h1 className='text-sm font-semibold '>Skripsi,TA ,Wisuda</h1>
+                  <h1 className='text-sm font-semibold'>Skripsi,TA ,Wisuda</h1>
                   <p className={styles.deskripsi}>Info seputar jadwal bimbingan TA serta pedoman Skripsi/TA</p>
                </div>
             </div>
@@ -113,7 +113,7 @@ const Beranda = () => {
             </div>
             <div className={styles.akademikBottom}>
                <div className={styles.pengumuman}>
-                  <h1 className='text-sky-700 font-semibold'>Pengumuman Sosialisasi Outline Tugas Akhir Mhs Semester 6 Prodi Administrasi Bisnis (27 Februari 2023)</h1>
+                  <h1 className='text-sky-700 font-semibold'>Pengumuman Sosialisasi Tugas Akhir Mhs Semester 6 Prodi SI Surakarta (24 Februari 2023)</h1>
                   <p>Update : 15 Februari 2023</p>
                </div>
                <div>
@@ -122,8 +122,8 @@ const Beranda = () => {
             </div>
             <div className={styles.akademikBottom}>
                <div className={styles.pengumuman}>
-                  <h1 className='text-sky-700 font-semibold'>Pengumuman Sosialisasi Outline Tugas Akhir Mhs Semester 6 Prodi Administrasi Bisnis (27 Februari 2023)</h1>
-                  <p>Update : 15 Februari 2023</p>
+                  <h1 className='text-sky-700 font-semibold'>Edaran Pendaftaran Pandu Muda Indonesia Tahun 2023</h1>
+                  <p>Update : 13 Februari 2023</p>
                </div>
                <div>
                   <button className={styles.btn}>Lihat Info</button>
@@ -131,8 +131,8 @@ const Beranda = () => {
             </div>
             <div className={styles.akademikBottom}>
                <div className={styles.pengumuman}>
-                  <h1 className='text-sky-700 font-semibold'>Pengumuman Sosialisasi Outline Tugas Akhir Mhs Semester 6 Prodi Administrasi Bisnis (27 Februari 2023)</h1>
-                  <p>Update : 15 Februari 2023</p>
+                  <h1 className='text-sky-700 font-semibold'>Pengumuman Sosialisasi Skripsi Mhs Semester 7 Prodi Manajemen (15 Februari 2023)</h1>
+                  <p>Update : 13 Februari 2023</p>
                </div>
                <div>
                   <button className={styles.btn}>Lihat Info</button>
@@ -140,8 +140,8 @@ const Beranda = () => {
             </div>
             <div className={styles.akademikBottom}>
                <div className={styles.pengumuman}>
-                  <h1 className='text-sky-700 font-semibold'>Pengumuman Sosialisasi Outline Tugas Akhir Mhs Semester 6 Prodi Administrasi Bisnis (27 Februari 2023)</h1>
-                  <p>Update : 15 Februari 2023</p>
+                  <h1 className='text-sky-700 font-semibold'>Pengumuman Kegiatan Sosialisasi Skripsi Mhs Semester 7 Prodi Akuntasi (S1) (14 Februari 2023)</h1>
+                  <p>Update : 09 Februari 2023</p>
                </div>
                <div>
                   <button className={styles.btn}>Lihat Info</button>

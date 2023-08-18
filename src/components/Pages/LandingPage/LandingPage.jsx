@@ -11,8 +11,27 @@ import I from '../../../assets/instagram.png'
 import L from '../../../assets/linkedin.png'
 import Y from '../../../assets/youtube.png'
 import P from '../../../assets/playstore.png'
-import { Link } from 'react-router-dom'
+
+// import { useState } from 'react'
+// import { useNavigate } from 'react-router-dom';
+// import { Link } from 'react-router-dom'
 const LandingPage = () => {
+   
+   // const navigate = useNavigate()
+
+   // const [nim, setNim] = useState("")
+   // const [password, setPassword] = useState("")
+
+
+   const handleSubmit = (e) => {
+      e.preventDefault()
+
+      localStorage.setItem("Nim", e.target.nim.value)
+      localStorage.setItem("Password", e.target.password.value)
+      window.location.href="/beranda" ; 
+     
+   }
+   
    return(
       <>
       <div className={`${styles.wrap}`}>
@@ -36,17 +55,17 @@ const LandingPage = () => {
                   <p className='text-sm font-semibold'>Dengan siakad student BSI ini anda bisa mencari seluruh informasi seputar perkuliahan hingga informasi lainnya yang berhubungan dengan wisuda.</p>
                </div>
                <div className={styles.mainForm}>
-                  <form className='w-full'>
+                  <form className='w-full' onSubmit={handleSubmit}>
                      <div className='flex'>
-                        <input type="text" placeholder='Masukan nim anda..' className={`mr-3 w-full ${styles.input}`}/>
-                        <input type="text" placeholder='Masukan password anda..' className={`w-full ${styles.input}`}/>
+                        <input type="text" name='nim' placeholder='Masukan nim anda..' className={`mr-3 w-full ${styles.input}`} />
+                        <input type="password" name='password' placeholder='Masukan password anda..' className={`w-full ${styles.input}`} />
                      </div>
                      <select id="cars" name="carlist" form="carform" className={`w-full mt-3 ${styles.input}`}>
                         <option value="D-III">D-III</option>
                         <option value="S1">S1</option>
                         <option value="S2">S2</option>
                      </select>
-                     <Link to="/beranda" className={styles.btn}>Login</Link>
+                     <button type="submit" className="flex justify-center items-center w-full py-3 bg-cyan-500 text-white mt-5">Login</button>
                   </form>
                </div>
             </div>

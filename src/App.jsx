@@ -3,6 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from './components/Pages/LandingPage/LandingPage'
 import Layout from './components/Layout/Layout';
 import Beranda from './components/Pages/Beranda/Beranda';
+import NilaiMahasiswa from './components/Pages/NilaiMahasiswa/NilaiMahasiswa';
+import Surat from './components/Pages/Surat/Surat';
+import InfoAkademik from './components/Pages/InfoAkademik/InfoAkademik';
 
 function App() {
 
@@ -11,9 +14,9 @@ function App() {
         <Routes>
           <Route element={<Layout/>}>
             <Route path="/beranda" element={<Beranda/>}/>
-            <Route path="/nilai" element={<h1>Nilai Mahasiswa</h1>}/>
-            <Route path="/surat" element={<h1>Surat</h1>}/>
-            <Route path="/info" element={<h1>Info Alademik</h1>}/>
+            <Route path="/nilai" element={<NilaiMahasiswa/>}/>
+            <Route path="/surat" element={<Surat/>}/>
+            <Route path="/info" element={<InfoAkademik/>}/>
           </Route>
           <Route path="/" element={<LandingPage/>}/>
         </Routes>
