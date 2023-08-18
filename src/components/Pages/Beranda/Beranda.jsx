@@ -7,7 +7,13 @@ import Laptop from '../../../assets/laptop.png'
 import Ceklis from '../../../assets/ceklis.png'
 import Book from '../../../assets/book.png'
 import Calendar from 'react-calendar';
+import { useState } from 'react'
 const Beranda = () => {
+   const [date, setDate] = useState(new Date())
+
+   const onChange = date => {
+      setDate(date)
+   } 
    return(
       <div className={styles.wrap}>
          <div className={styles.wrapTop}> 
