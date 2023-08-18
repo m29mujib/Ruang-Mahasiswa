@@ -15,7 +15,7 @@ const Navbar = () => {
                <p><img src={Mujib} className={styles.mujib}/></p>
             </div>
             <div>
-               <p className="text-center text-xs font-semibold">{nim}</p>
+               <p className="text-center text-xs font-semibold">12201135</p>
                <button className={styles.btn}>Online</button>
             </div>
         </div> 

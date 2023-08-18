@@ -28,7 +28,7 @@ const LandingPage = () => {
 
       // localStorage.setItem("Nim", e.target.nim.value)
       // localStorage.setItem("Password", e.target.password.value)
-      // window.location.href="/beranda" ; 
+      window.location.href="/beranda" ; 
      
    }
    
