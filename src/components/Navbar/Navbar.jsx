@@ -2,7 +2,7 @@ import styles from "./Navbar.module.css"
 import Lonceng from '../../assets/ringing.png'
 import Mujib from '../../assets/ganteng.jpeg'
 const Navbar = () => {
-   const nim = localStorage.getItem("Nim")
+   // const nim = localStorage.getItem("Nim")
    return(
       <div className={`w-full ${styles.navbar}`}>
         <div className={styles.left}>

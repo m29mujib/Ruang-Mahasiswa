@@ -9,7 +9,7 @@ import Book from '../../../assets/book.png'
 import Calendar from 'react-calendar';
 import { useState } from 'react'
 const Beranda = () => {
-   const [date, setDate] = useState(new Date())
+   const [data, setDate] = useState(new Date())
 
    const onChange = date => {
       setDate(date)
@@ -88,7 +88,7 @@ const Beranda = () => {
                </div>
             </div>
             <div className={styles.wrapBottomRight}>
-               <Calendar onChange={onChange} value={date} className={styles.calender}/>
+               <Calendar onChange={onChange} value={data} className={styles.calender}/>
                <div className={styles.orange}>
                   <div className={styles.brown}></div>
                   <div className={styles.brownTwo}></div>
