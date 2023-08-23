@@ -3,9 +3,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from './components/Pages/LandingPage/LandingPage'
 import Layout from './components/Layout/Layout';
 import Beranda from './components/Pages/Beranda/Beranda';
-import NilaiMahasiswa from './components/Pages/NilaiMahasiswa/NilaiMahasiswa';
 import Surat from './components/Pages/Surat/Surat';
 import InfoAkademik from './components/Pages/InfoAkademik/InfoAkademik';
+import KhsMahasiswa from './components/Pages/NilaiMahasiswa/KhsMahasiswa/KhsMahasiswa';
+import NilaiUjian from './components/Pages/NilaiMahasiswa/NilaiUjianMahasiswa/NilaiUjian';
+
 
 function App() {
 
@@ -14,7 +16,8 @@ function App() {
         <Routes>
           <Route element={<Layout/>}>
             <Route path="/beranda" element={<Beranda/>}/>
-            <Route path="/nilai" element={<NilaiMahasiswa/>}/>
+            <Route path="/khs" element={<KhsMahasiswa/>}/>
+            <Route path="/ujian" element={<NilaiUjian/>}/>
             <Route path="/surat" element={<Surat/>}/>
             <Route path="/info" element={<InfoAkademik/>}/>
           </Route>

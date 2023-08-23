@@ -6,7 +6,12 @@ import Nilai from '../../assets/document.png'
 import Surat from '../../assets/email.png'
 import Info from '../../assets/information.png'
 import Logout from '../../assets/exit.png'
+import Khs from '../../assets/semester.png'
+import Ujian from '../../assets/administration.png'
+import { useState } from 'react'
 const Sidebar = () => {
+   const [openDropDown, setOpenDropDown] = useState(false)
+
    return(
       <div className={styles.sidebar}>
          <div className={styles.logo}>
@@ -14,7 +19,20 @@ const Sidebar = () => {
          </div>
          <div className={styles.link}>
             <Link to="/beranda" className={styles.linkTo}><a href="#"><img src={Home} className={styles.img}/></a>Beranda</Link>
-            <Link to="/nilai" className={styles.linkTo}><a href="#"><img src={Nilai}className={styles.img}/></a>Nilai Mahasiswa</Link>
+            <p className={styles.linkDropDown}>
+               <div className='nl' onClick={(()=> setOpenDropDown((prev) => !prev))}>
+                 <p className={styles.nilaiMhs}><img src={Nilai} className={styles.img}/>Nilai Mahasiswa</p>
+               </div>
+               {
+                  openDropDown&& (
+                     <div className={styles.dropdown}>
+                        <Link to="/khs" className='mb-5 text-green-700 font-semibold flex'><img src={Khs} className={styles.img}/>Khs Semester</Link>
+                        <Link to="/ujian" className='mb-5  text-green-700 font-semibold flex'><img src={Ujian} className={styles.img}/>Nilai Ujian</Link>
+                     </div>
+                  )
+               }
+               
+            </p>
             <Link to="/surat" className={styles.linkTo}><a href="#"><img src={Surat} className={styles.img}/></a>Surat</Link>
             <Link to="/info" className={styles.linkTo}><a href="#"><img src={Info} className={styles.img}/></a>Info Akademik</Link>
          </div>

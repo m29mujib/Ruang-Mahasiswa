@@ -108,7 +108,7 @@ const Beranda = () => {
                   <p>Update : 15 Februari 2023</p>
                </div>
                <div>
-                  <button className={styles.btn}>Lihat Info</button>
+                  <button className={styles.btn} onClick={() => alert("Maaf sekarang masih belum bisa..")}>Lihat Info</button>
                </div>
             </div>
             <div className={styles.akademikBottom}>
@@ -117,7 +117,7 @@ const Beranda = () => {
                   <p>Update : 15 Februari 2023</p>
                </div>
                <div>
-                  <button className={styles.btn}>Lihat Info</button>
+                  <button className={styles.btn} onClick={() => alert("Maaf sekarang masih belum bisa..")}>Lihat Info</button>
                </div>
             </div>
             <div className={styles.akademikBottom}>
@@ -126,7 +126,7 @@ const Beranda = () => {
                   <p>Update : 13 Februari 2023</p>
                </div>
                <div>
-                  <button className={styles.btn}>Lihat Info</button>
+                  <button className={styles.btn} onClick={() => alert("Maaf sekarang masih belum bisa..")}>Lihat Info</button>
                </div>
             </div>
             <div className={styles.akademikBottom}>
@@ -135,7 +135,7 @@ const Beranda = () => {
                   <p>Update : 13 Februari 2023</p>
                </div>
                <div>
-                  <button className={styles.btn}>Lihat Info</button>
+                  <button className={styles.btn} onClick={() => alert("Maaf sekarang masih belum bisa..")}>Lihat Info</button>
                </div>
             </div>
             <div className={styles.akademikBottom}>
@@ -144,7 +144,7 @@ const Beranda = () => {
                   <p>Update : 09 Februari 2023</p>
                </div>
                <div>
-                  <button className={styles.btn}>Lihat Info</button>
+                  <button className={styles.btn} onClick={() => alert("Maaf sekarang masih belum bisa..")}>Lihat Info</button>
                </div>
             </div>
          </div>

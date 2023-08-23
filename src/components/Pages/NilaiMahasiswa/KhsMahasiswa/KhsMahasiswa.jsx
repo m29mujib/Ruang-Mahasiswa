@@ -1,5 +1,5 @@
-import styles from "./NilaiMahasiswa.module.css"
-const NilaiMahasiswa = () => {
+import styles from "./KhsMahasiswa.module.css"
+const KhsMahasiswa = () => {
    const data = [
   { kode: 'MK101', mataKuliah: 'Matematika Dasar', sks: 4, nilai: 'A', mutu: 4.00, keterangan: 'Lulus' },
   { kode: 'MK102', mataKuliah: 'Fisika Dasar', sks: 4, nilai: 'B', mutu: 3.00, keterangan: 'Lulus' },
@@ -11,6 +11,12 @@ const NilaiMahasiswa = () => {
   { kode: 'MK108', mataKuliah: 'PTIK', sks: 4, nilai: 'A', mutu: 2.00, keterangan: 'Lulus' },
   { kode: 'MK109', mataKuliah: 'B. Indonesia', sks: 9, nilai: 'A', mutu: 2.00, keterangan: 'Lulus' },
   { kode: 'MK110', mataKuliah: 'B. Inggris', sks: 5, nilai: 'B', mutu: 2.00, keterangan: 'Lulus' },
+  { kode: 'MK101', mataKuliah: 'Matematika Dasar', sks: 4, nilai: 'A', mutu: 4.00, keterangan: 'Lulus' },
+  { kode: 'MK103', mataKuliah: 'Web Programming', sks: 6, nilai: 'A', mutu: 2.00, keterangan: 'Lulus' },
+  { kode: 'MK105', mataKuliah: 'Struktur Data', sks: 6, nilai: 'C', mutu: 2.00, keterangan: 'Tidak Lulus' },
+  { kode: 'MK109', mataKuliah: 'B. Indonesia', sks: 9, nilai: 'A', mutu: 2.00, keterangan: 'Lulus' }
+
+
 ];
    return(
       <div className={styles.wrap}>
@@ -63,4 +69,4 @@ const NilaiMahasiswa = () => {
       </div>
    )
 }
-export default NilaiMahasiswa 
+export default KhsMahasiswa 
